@@ -4,17 +4,17 @@
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
-        m <- NULL
+        i <- NULL
         set <- function(y) {
-                   x <<- y
-                m <<- NULL
+                x <<- y
+                i <<- NULL
         }
         get <- function() x
-        setmean <- function(mean) m <<- mean
-        getmean <- function() m
+        setinver <- function(inver) i <<- inver
+        getinver <- function() i
         list(set = set, get = get,
-             setmean = setmean,
-             getmean = getmean)
+             setinver = setinver,
+             getinver = getinver)
 
 }
 
