@@ -29,9 +29,13 @@ cacheSolve <- function(x, ...) {
                 return(i)
         }
         data <- x$get()
-        m <- mean(data, ...)
-        x$setmean(m)
-        m
+        i <- solve(data, ...)
+        x$setinver(i)
+        i
 }
 
-#just for test and I will delete
+
+
+
+
+ 
